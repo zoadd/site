@@ -1,0 +1,418 @@
+body {
+    background-color: rgb(49, 49, 49);
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: pink;
+    box-shadow: 0px 20px 25px 17px  pink;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 50px;
+    
+}
+header p {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(49, 49, 49);
+    text-shadow: 1px 1px 17px black;
+    cursor: default;
+}
+
+header a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 130px;
+    position: relative;
+
+}
+
+
+
+.bio {
+    padding: 20px;
+    display: block;
+    width: 700px;
+
+}
+
+.bio img{
+    height: 300px;
+    width: 300px;
+    margin-left: calc(50% - 150px);
+    border-radius: 80px;
+    box-shadow: 0px 0px 70px pink ;
+    transition: all 0.3s;
+}
+
+.bio img:hover{
+    transform: translateY(-10px);
+
+}
+
+.bio p {
+    color: pink;
+    font-size: 25px;
+    padding: 20px;
+    border: 5px solid pink;
+    border-radius: 40px;
+    margin-top: 70px;
+    transition: all 0.3s;
+    font-weight: bold;
+    cursor: default;
+
+}
+
+.bio p:hover{
+    transform: translateY(-10px);
+    color: rgb(253, 239, 241);
+}
+
+.figures {
+    padding: 25px;
+    border: 5px solid pink;
+    border-radius: 30px;
+}
+
+.figures p {
+    color: pink;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.figures img {
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    border: 3px solid pink;
+    border-radius: 40px;
+    filter: grayscale(80%);
+    transition: all 0.3s;
+}
+
+.figures img:hover{
+    filter: grayscale(0%);
+    transform: translateY(-10px);
+}
+
+
+
+footer {
+    display: flex;
+    background-color: pink;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: larger;
+    margin-top: 200px;
+}
+
+footer a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+[class^="ambient"] {
+    background-color: pink;
+    width: 600px;
+    height: 90%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 60%;
+}
+
+.ambient1 {
+    rotate: 40deg;
+    opacity: 20%;
+    animation-name: ambient-motion1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.ambient2 {
+    rotate: -40deg;
+    opacity: 40%;
+    animation-name: ambient-motion2;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.ambient3 {
+    rotate: 90deg;
+    opacity: 10%;
+    animation-name: ambient-motion3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes ambient-motion1 {
+    to {
+        opacity: 45%;
+        rotate: 270deg;
+        transform: translateY(-110px);
+    }
+}
+@keyframes ambient-motion2 {
+    to {
+        opacity: 10%;
+        rotate: 360deg;
+        transform: translateY(130px);
+    }
+}
+@keyframes ambient-motion3 {
+    to {
+        opacity: 45%;
+        rotate: 200deg;
+        transform: translateY(-150px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    
+    body {
+        background-color: rgb(49, 49, 49);
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    header {
+        display: flex;
+        width: 100vw;
+        background-color: pink;
+        box-shadow: 0px 20px 25px 17px  pink;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 50px;
+        
+    }
+    header p {
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(49, 49, 49);
+        text-shadow: 1px 1px 17px black;
+        cursor: default;
+        font-size: 85%;
+    }
+    
+    header a {
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 85%;
+    }
+    
+    a:hover {
+        color: white;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    section {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 130px;
+        margin-left: 5%;
+    
+    }
+
+    [class^="ambient"] {
+        background-color: pink;
+        width: 360px;
+        height: 13%;
+        z-index: -1;
+        position: absolute;
+        border-radius: 60%;
+    }
+    
+    
+    
+    .bio {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+    .bio img{
+        height: 200px;
+        width: 200px;
+        margin-left: calc(50% - 100px);
+        border-radius: 80px;
+        box-shadow: 0px 0px 70px pink ;
+        transition: all 0.3s;
+    }
+    
+    .bio img:hover{
+        transform: translateY(-10px);
+    
+    }
+    
+    .bio p {
+        color: pink;
+        font-size: 100%;
+        padding: 20px;
+        border: 3px solid pink;
+        border-radius: 40px;
+        margin-top: 70px;
+        transition: all 0.3s;
+        font-weight: bold;
+        cursor: default;
+    }
+    
+    .bio p:hover{
+        transform: translateY(-10px);
+        color: rgb(253, 239, 241);
+    }
+    
+    .figures {
+        padding: 25px;
+        border: 3px solid pink;
+        border-radius: 30px;
+    }
+    
+    .figures p {
+        color: pink;
+        font-size: 120%;
+        font-weight: bold;
+    }
+    
+    .figures img {
+        height: 200px;
+        width: 200px;
+        padding: 15px;
+        border: 3px solid pink;
+        border-radius: 40px;
+        filter: grayscale(80%);
+        transition: all 0.3s;
+        margin-left: calc(50% - 115px);
+        margin-bottom: 10px;
+    }
+    
+    .figures img:hover{
+        filter: grayscale(0%);
+        transform: translateY(-10px);
+    }
+    
+    
+    
+    footer {
+        display: flex;
+        width: 100%;
+        background-color: pink;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 85%;
+        margin-top: 200px;
+
+    }
+    
+    footer a{
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: bold;
+        align-self: center;
+    }
+
+}
+
+@keyframes ambient-motion3 {
+    to {
+        opacity: 45%;
+        rotate: 200deg;
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes ambient-motion1 {
+    to {
+        opacity: 45%;
+        rotate: 270deg;
+        transform: translateY(-90px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+
+    [class^="ambient"] {
+        background-color: pink;
+        width: 360px;
+        height: 13%;
+        z-index: -1;
+        position: absolute;
+        border-radius: 60%;
+    }
+}
